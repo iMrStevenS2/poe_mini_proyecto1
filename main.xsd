@@ -1,0 +1,16 @@
+ublic class JuegoDeTamanos {
+    private String nombreJugador;
+    private int cantidadFiguras;
+    private int cantidadIntentos;
+    private int cantidadFallos;
+
+    public void iniciarJuego() {
+        solicitarNombreJugador();
+        mostrarInterfazJuego();
+    }
+
+    private void solicitarNombreJugador() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Ingrese su nombre: ");
+        nombreJugador = scanner.nextLine();
+    }
