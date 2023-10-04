@@ -11,9 +11,85 @@
  */
 package Vista;
 
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+// import javax.swing.JTextField;
+import java.awt.Container;
 
+public class ResultadosPartida extends JFrame {
+    
+    private JLabel lblNombre;
+    private JLabel lblCantidadFiguras;
+    private JLabel lblNumeroFiguras;
+    private JLabel lblCantidadIntentos;
+    private JLabel lblNumeroIntentos;
+    private JLabel lblCantidadFallos;
+    private JLabel lblNumeroFallos;
 
+    private JButton btnReiniciarJuego;
+    private Container masterPanel;
+    public ResultadosPartida() {
+        initComponents();
+        setSize(550, 450);
+        setVisible(true);
+        setLocationRelativeTo(null);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setTitle("Resultados");
+    }
 
-public class ResultadosPartida {
+    private void initComponents() {
+
+        lblNombre = new JLabel("Nombre del jugador");
+        lblCantidadFiguras = new JLabel("Cantidad de figuras");
+        lblNumeroFiguras = new JLabel("# Figuras");
+        lblCantidadIntentos = new JLabel("Cantidad de intentos");
+        lblNumeroIntentos = new JLabel("# Intentos");
+        lblCantidadFallos = new JLabel("Cantidad de fallos");
+        lblNumeroFallos = new JLabel("# Fallos");
+
+        btnReiniciarJuego = new JButton("Reiniciar Juego");
+
+        masterPanel = getContentPane();
+        masterPanel.setLayout(null);
+
+        button_events be = new button_events();
+        btnReiniciarJuego.addActionListener(be);
+
+        masterPanel.add(lblNombre);
+        masterPanel.add(lblCantidadFiguras);
+        masterPanel.add(lblNumeroFiguras);
+        masterPanel.add(lblCantidadIntentos);
+        masterPanel.add(lblNumeroIntentos);
+        masterPanel.add(lblCantidadFallos);
+        masterPanel.add(lblNumeroFallos);
+
+        masterPanel.add(btnReiniciarJuego);
+
+        lblNombre.setBounds(215, 30, 180, 60);
+        lblCantidadFiguras.setBounds(215, 90, 130, 60);
+        lblNumeroFiguras.setBounds(215, 160, 130, 60);
+        lblCantidadIntentos.setBounds(215, 230, 130, 60);
+        lblNumeroIntentos.setBounds(215, 300, 130, 60);
+        lblCantidadFallos.setBounds(215, 370, 130, 60);
+        lblNumeroFallos.setBounds(215, 440, 130, 60);
+
+        btnReiniciarJuego.setBounds(215, 510, 130, 60);
+
+        
+
+    }
+
+    private class button_events implements java.awt.event.ActionListener {
+
+        @Override
+        public void actionPerformed(java.awt.event.ActionEvent e) {
+            if (e.getSource() == btnReiniciarJuego) {
+                System.out.println("Reiniciar Juego");
+                VentanaTamanio ventana = new VentanaTamanio();
+                dispose();
+            }
+        }
+    }
 
 }
