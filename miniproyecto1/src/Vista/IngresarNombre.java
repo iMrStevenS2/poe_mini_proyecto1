@@ -6,6 +6,7 @@
 /**
  * 
  *      @author Steven Bernal Ortiz - 1942208
+ *      @author Jorge Arley Garcia  - 2182588
  * Profesor: LUIS JOHANY ROMO PORTILLA
  * 
  */
