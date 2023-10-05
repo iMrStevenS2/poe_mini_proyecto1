@@ -1,3 +1,9 @@
+/**
+ * 
+ *      @author Steven Bernal Ortiz - 1942208
+ * Profesor: LUIS JOHANY ROMO PORTILLA
+ * 
+ */
 package Vista;
 
 import java.awt.Container;
