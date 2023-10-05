@@ -32,7 +32,7 @@ public class VentanaTamanio extends JFrame {
 
         masterPanel = getContentPane();
         masterPanel.setLayout(null);
-        
+
         button_events be = new button_events();
         btnJugar.addActionListener(be);
         btnInstrucciones.addActionListener(be);
@@ -43,11 +43,10 @@ public class VentanaTamanio extends JFrame {
         masterPanel.add(btnInstrucciones);
         masterPanel.add(btnSalir);
 
-        lblPrueba.setBounds(215, 30, 180, 60);
+        lblPrueba.setBounds(186, 30, 210, 60);
         btnJugar.setBounds(215, 90, 130, 60);
         btnInstrucciones.setBounds(215, 160, 130, 60);
         btnSalir.setBounds(215, 230, 130, 60);
-
 
     }
 
@@ -57,10 +56,17 @@ public class VentanaTamanio extends JFrame {
         public void actionPerformed(java.awt.event.ActionEvent e) {
             if (e.getSource() == btnJugar) {
                 System.out.println("Jugar");
+                Juego juego = new Juego();
+                juego.setVisible(true);
+                dispose(); // Cierra la ventana actual
             } else if (e.getSource() == btnInstrucciones) {
                 System.out.println("Instrucciones");
+                VentanaInstrucciones Instrucciones = new VentanaInstrucciones();
+                Instrucciones.setVisible(true);
+                dispose();
             } else if (e.getSource() == btnSalir) {
                 System.out.println("Salir");
+                dispose();
             }
         }
     }

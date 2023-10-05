@@ -71,9 +71,11 @@ public class Juego extends JFrame {
 
         masterPanel.add(lblNombre);
         masterPanel.add(lblCantidadFiguras);
-
+        masterPanel.add(lblNumeroFiguras);
         masterPanel.add(lblCantidadIntentos);
+        masterPanel.add(lblNumeroIntentos);
         masterPanel.add(lblCantidadFallos);
+        masterPanel.add(lblNumeroFallos);
         masterPanel.add(txtNombre);
         masterPanel.add(btnImagenPrincipal);
         masterPanel.add(btnImagen1);
@@ -83,8 +85,11 @@ public class Juego extends JFrame {
 
         lblNombre.setBounds(10, 10, 120, 20);
         lblCantidadFiguras.setBounds(10, 40, 120, 20);
+        lblNumeroFiguras.setBounds(130, 40, 120, 20);
         lblCantidadIntentos.setBounds(10, 70, 120, 20);
+        lblNumeroIntentos.setBounds(130, 70, 120, 20);
         lblCantidadFallos.setBounds(10, 100, 120, 20);
+        lblNumeroFallos.setBounds(130, 100, 120, 20);
         txtNombre.setBounds(10, 130, 120, 20);
         btnImagenPrincipal.setBounds(10, 160, 120, 20);
         btnImagen1.setBounds(10, 190, 120, 20);
@@ -108,6 +113,8 @@ public class Juego extends JFrame {
                 System.out.println("Imagen 3");
             } else if (e.getSource() == btnTerminarJuego) {
                 System.out.println("Terminar Juego");
+                ResultadosPartida results = new ResultadosPartida();
+                dispose();
             }
         }
     }
