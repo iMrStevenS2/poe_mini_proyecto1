@@ -49,6 +49,7 @@ public class VentanaTamanio extends JFrame {
         btnSalir.setBounds(215, 230, 130, 60);
 
     }
+    
 
     private class button_events implements ActionListener {
 
@@ -56,8 +57,8 @@ public class VentanaTamanio extends JFrame {
         public void actionPerformed(java.awt.event.ActionEvent e) {
             if (e.getSource() == btnJugar) {
                 System.out.println("Jugar");
-                Juego juego = new Juego();
-                juego.setVisible(true);
+                IngresarNombre nombre = new IngresarNombre();
+                nombre.setVisible(true);
                 dispose(); // Cierra la ventana actual
             } else if (e.getSource() == btnInstrucciones) {
                 System.out.println("Instrucciones");
