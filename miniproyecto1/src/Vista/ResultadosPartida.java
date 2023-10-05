@@ -18,7 +18,7 @@ import javax.swing.JLabel;
 import java.awt.Container;
 
 public class ResultadosPartida extends JFrame {
-    
+
     private JLabel lblNombre;
     private JLabel lblCantidadFiguras;
     private JLabel lblNumeroFiguras;
@@ -29,6 +29,7 @@ public class ResultadosPartida extends JFrame {
 
     private JButton btnReiniciarJuego;
     private Container masterPanel;
+
     public ResultadosPartida() {
         initComponents();
         setSize(550, 450);
@@ -66,17 +67,16 @@ public class ResultadosPartida extends JFrame {
 
         masterPanel.add(btnReiniciarJuego);
 
-        lblNombre.setBounds(215, 30, 180, 60);
-        lblCantidadFiguras.setBounds(215, 90, 130, 60);
-        lblNumeroFiguras.setBounds(215, 160, 130, 60);
-        lblCantidadIntentos.setBounds(215, 230, 130, 60);
-        lblNumeroIntentos.setBounds(215, 300, 130, 60);
-        lblCantidadFallos.setBounds(215, 370, 130, 60);
-        lblNumeroFallos.setBounds(215, 440, 130, 60);
+        lblNombre.setBounds(106, 30, 180, 20);
 
-        btnReiniciarJuego.setBounds(215, 510, 130, 60);
+        lblCantidadFiguras.setBounds(106, 30, 130, 60);
+        lblNumeroFiguras.setBounds(246, 30, 130, 60);
+        lblCantidadIntentos.setBounds(106, 100, 130, 60);
+        lblNumeroIntentos.setBounds(246, 100, 130, 60);
+        lblCantidadFallos.setBounds(106, 170, 130, 60);
+        lblNumeroFallos.setBounds(246, 170, 130, 60);
 
-        
+        btnReiniciarJuego.setBounds(215, 230, 130, 60);
 
     }
 

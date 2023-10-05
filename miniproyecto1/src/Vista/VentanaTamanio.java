@@ -43,7 +43,7 @@ public class VentanaTamanio extends JFrame {
         masterPanel.add(btnInstrucciones);
         masterPanel.add(btnSalir);
 
-        lblPrueba.setBounds(215, 30, 180, 60);
+        lblPrueba.setBounds(186, 30, 210, 60);
         btnJugar.setBounds(215, 90, 130, 60);
         btnInstrucciones.setBounds(215, 160, 130, 60);
         btnSalir.setBounds(215, 230, 130, 60);
