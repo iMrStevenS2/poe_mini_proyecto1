@@ -16,6 +16,9 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JButton;
 import javax.swing.JTextField;
+
+import modelo.Jugador;
+
 import java.awt.Container;
 
 public class IngresarNombre extends JFrame {
@@ -62,8 +65,10 @@ public class IngresarNombre extends JFrame {
         @Override
         public void actionPerformed(java.awt.event.ActionEvent e) {
             if (e.getSource() == btnContinuar) {
-                System.out.println("Este Boton Funciona");
-                Juego game = new Juego();
+                // System.out.println("Este Boton Funciona");
+                Jugador jugador = new Jugador();
+                jugador.setNombre(txtNombre.getText());
+                Juego game = new Juego(jugador);
                 game.setVisible(true);
                 dispose();
             }

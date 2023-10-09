@@ -17,6 +17,19 @@ public class Jugador {
         this.puntaje = 0;
     }
 
+    public Jugador() {
+        this.nombre = "";
+        this.puntaje = 0;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setPuntaje(int puntaje) {
+        this.puntaje = puntaje;
+    }
+
     public String getNombre() {
         return nombre;
     }
@@ -29,5 +42,4 @@ public class Jugador {
         puntaje++;
     }
 
-    
 }

@@ -57,7 +57,7 @@ public class VentanaInstrucciones extends JFrame {
         @Override
         public void actionPerformed(java.awt.event.ActionEvent e) {
             if (e.getSource() == btnRegresar) {
-                System.out.println("Regresar");
+                // System.out.println("Regresar");
                 VentanaTamanio ventana = new VentanaTamanio();
                 dispose();
             }

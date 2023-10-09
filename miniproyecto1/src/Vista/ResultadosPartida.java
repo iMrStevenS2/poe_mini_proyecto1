@@ -15,10 +15,16 @@ package Vista;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+
+import modelo.Jugador;
+import modelo.Tablero;
+
 // import javax.swing.JTextField;
 import java.awt.Container;
 
 public class ResultadosPartida extends JFrame {
+    private Jugador jugador;
+    private Tablero tablero;
 
     private JLabel lblNombre;
     private JLabel lblCantidadFiguras;
@@ -31,7 +37,9 @@ public class ResultadosPartida extends JFrame {
     private JButton btnReiniciarJuego;
     private Container masterPanel;
 
-    public ResultadosPartida() {
+    public ResultadosPartida(Jugador jugador, Tablero tablero) {
+        this.jugador = jugador;
+        this.tablero = tablero;
         initComponents();
         setSize(550, 450);
         setVisible(true);
@@ -42,13 +50,13 @@ public class ResultadosPartida extends JFrame {
 
     private void initComponents() {
 
-        lblNombre = new JLabel("Nombre del jugador");
-        lblCantidadFiguras = new JLabel("Cantidad de figuras");
-        lblNumeroFiguras = new JLabel("# Figuras");
-        lblCantidadIntentos = new JLabel("Cantidad de intentos");
-        lblNumeroIntentos = new JLabel("# Intentos");
-        lblCantidadFallos = new JLabel("Cantidad de fallos");
-        lblNumeroFallos = new JLabel("# Fallos");
+        lblNombre = new JLabel(jugador.getNombre() + ", estos son los resultados de la partida:");
+        lblCantidadFiguras = new JLabel("Figuras mostradas:");
+        lblNumeroFiguras = new JLabel(tablero.getFiguras() + "");
+        lblCantidadIntentos = new JLabel("Cantidad de Aciertos:");
+        lblNumeroIntentos = new JLabel(tablero.getAciertos() + "");
+        lblCantidadFallos = new JLabel("Cantidad de fallos:");
+        lblNumeroFallos = new JLabel(tablero.getFallos() + "");
 
         btnReiniciarJuego = new JButton("Reiniciar Juego");
 
@@ -68,14 +76,14 @@ public class ResultadosPartida extends JFrame {
 
         masterPanel.add(btnReiniciarJuego);
 
-        lblNombre.setBounds(106, 30, 180, 20);
+        lblNombre.setBounds(106, 30, 250, 20);
 
-        lblCantidadFiguras.setBounds(106, 30, 130, 60);
-        lblNumeroFiguras.setBounds(246, 30, 130, 60);
-        lblCantidadIntentos.setBounds(106, 100, 130, 60);
-        lblNumeroIntentos.setBounds(246, 100, 130, 60);
-        lblCantidadFallos.setBounds(106, 170, 130, 60);
-        lblNumeroFallos.setBounds(246, 170, 130, 60);
+        lblCantidadFiguras.setBounds(106, 30, 250, 60);
+        lblNumeroFiguras.setBounds(246, 30, 250, 60);
+        lblCantidadIntentos.setBounds(106, 100, 250, 60);
+        lblNumeroIntentos.setBounds(246, 100, 250, 60);
+        lblCantidadFallos.setBounds(106, 170, 250, 60);
+        lblNumeroFallos.setBounds(246, 170, 250, 60);
 
         btnReiniciarJuego.setBounds(215, 230, 130, 60);
 
@@ -86,7 +94,7 @@ public class ResultadosPartida extends JFrame {
         @Override
         public void actionPerformed(java.awt.event.ActionEvent e) {
             if (e.getSource() == btnReiniciarJuego) {
-                System.out.println("Reiniciar Juego");
+                // System.out.println("Reiniciar Juego");
                 VentanaTamanio ventana = new VentanaTamanio();
                 dispose();
             }

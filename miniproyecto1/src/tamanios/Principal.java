@@ -7,12 +7,9 @@ package tamanios;
 import Vista.VentanaTamanio;
 import Vista.IngresarNombre;
 import Vista.Juego;
-<<<<<<< HEAD
     
-=======
 import Vista.ResultadosPartida;
 
->>>>>>> 60c78042ad06936846e7f09fd61f6abedd4b1750
 /**
  * 
  *      @author Steven Bernal Ortiz - 1942208
@@ -27,7 +24,7 @@ public class Principal {
      */
     public static void main(String[] args) {
         // Llamada de Componentes principales
-        System.out.println("Bienvenido al programa de tamanios");
+        // System.out.println("Bienvenido al programa de tamanios");
         VentanaTamanio ventana = new VentanaTamanio();
         // IngresarNombre gui = new IngresarNombre();
         // Juego game = new Juego();

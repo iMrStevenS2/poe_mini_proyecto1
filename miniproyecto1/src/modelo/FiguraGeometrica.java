@@ -9,14 +9,33 @@ package modelo;
  * @author 57315
  */
 public class FiguraGeometrica {
-    private String tipo;
+    // private String tipo;
+    private int tamanio;
 
-    public FiguraGeometrica(String tipo) {
-        this.tipo = tipo;
+    public FiguraGeometrica(int tamanio) {
+        // this.tipo = tipo;
+        this.tamanio = tamanio;
     }
 
-    public String getTipo() {
-        return tipo;
+    public FiguraGeometrica() {
+        // this.tipo = "";
+        this.tamanio = 0;
     }
-    
+
+    // public String getTipo() {
+    // return tipo;
+    // }
+
+    // public void setTipo(String tipo) {
+    // this.tipo = tipo;
+    // }
+
+    public int getTamanio() {
+        return tamanio;
+    }
+
+    public void setTamanio(int tamanio) {
+        this.tamanio = tamanio;
+    }
+
 }
