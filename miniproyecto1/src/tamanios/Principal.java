@@ -7,11 +7,16 @@ package tamanios;
 import Vista.VentanaTamanio;
 import Vista.IngresarNombre;
 import Vista.Juego;
+<<<<<<< HEAD
+    
+=======
 import Vista.ResultadosPartida;
 
+>>>>>>> 60c78042ad06936846e7f09fd61f6abedd4b1750
 /**
  * 
  *      @author Steven Bernal Ortiz - 1942208
+ *      @author Jorge Arley Garcia  - 2182588
  *      @Profesor: LUIS JOHANY ROMO PORTILLA
  * 
  */
