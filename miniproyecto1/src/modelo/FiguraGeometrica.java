@@ -1,22 +1,30 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package modelo;
 
 /**
- *
- * @author 57315
+ * @author Steven Bernal Ortiz - 1942208
+ * @author Jorge Arley Garcia - 2182588
  */
 public class FiguraGeometrica {
-    private String tipo;
+    // private String tipo;
+    private int tamanio;
 
-    public FiguraGeometrica(String tipo) {
-        this.tipo = tipo;
+    public FiguraGeometrica(int tamanio) {
+        // this.tipo = tipo;
+        this.tamanio = tamanio;
     }
 
-    public String getTipo() {
-        return tipo;
+    public FiguraGeometrica() {
+        // this.tipo = "";
+        this.tamanio = 0;
     }
-    
+
+    public int getTamanio() {
+        return tamanio;
+    }
+
+    public void setTamanio(int tamanio) {
+        this.tamanio = tamanio;
+    }
+
 }

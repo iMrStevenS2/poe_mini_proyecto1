@@ -11,6 +11,6 @@ ublic class JuegoDeTamanos {
 
     private void solicitarNombreJugador() {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Ingrese su nombre: ");
+        // System.out.print("Ingrese su nombre: ");
         nombreJugador = scanner.nextLine();
     }

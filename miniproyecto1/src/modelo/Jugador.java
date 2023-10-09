@@ -1,12 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package modelo;
 
 /**
- *
- * @author 57315
+ * @author Steven Bernal Ortiz - 1942208
+ * @author Jorge Arley Garcia - 2182588
  */
 public class Jugador {
     private String nombre;
@@ -15,6 +12,19 @@ public class Jugador {
     public Jugador(String nombre) {
         this.nombre = nombre;
         this.puntaje = 0;
+    }
+
+    public Jugador() {
+        this.nombre = "";
+        this.puntaje = 0;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setPuntaje(int puntaje) {
+        this.puntaje = puntaje;
     }
 
     public String getNombre() {
@@ -29,5 +39,4 @@ public class Jugador {
         puntaje++;
     }
 
-    
 }

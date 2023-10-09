@@ -23,15 +23,16 @@ public class VentanaTamanio extends JFrame {
 
     public VentanaTamanio() {
         initComponents();
+        setResizable(false);
         setSize(550, 450);
         setVisible(true);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setTitle("Tamaños");
+        setTitle("Inicio");
     }
 
     private void initComponents() {
-        lblPrueba = new JLabel("Prueba 1, Interfaz Juego Tamaños");
+        lblPrueba = new JLabel("¡Bienvenido al Juego 'Tamaños'!");
         btnJugar = new JButton("Jugar");
         btnInstrucciones = new JButton("Instrucciones");
         btnSalir = new JButton("Salir");
@@ -55,24 +56,23 @@ public class VentanaTamanio extends JFrame {
         btnSalir.setBounds(215, 230, 130, 60);
 
     }
-    
 
     private class button_events implements ActionListener {
 
         @Override
         public void actionPerformed(java.awt.event.ActionEvent e) {
             if (e.getSource() == btnJugar) {
-                System.out.println("Jugar");
+                // System.out.println("Jugar");
                 IngresarNombre nombre = new IngresarNombre();
                 nombre.setVisible(true);
                 dispose(); // Cierra la ventana actual
             } else if (e.getSource() == btnInstrucciones) {
-                System.out.println("Instrucciones");
+                // System.out.println("Instrucciones");
                 VentanaInstrucciones Instrucciones = new VentanaInstrucciones();
                 Instrucciones.setVisible(true);
                 dispose();
             } else if (e.getSource() == btnSalir) {
-                System.out.println("Salir");
+                // System.out.println("Salir");
                 dispose();
             }
         }
