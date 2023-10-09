@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 
 /**
  * 
@@ -57,7 +54,8 @@ public class Juego extends JFrame {
         this.figura2 = new FiguraGeometrica();
         this.figura3 = new FiguraGeometrica();
         initComponents();
-        setSize(550, 450);
+        setSize(550, 430);
+        setResizable(false);
         setVisible(true);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

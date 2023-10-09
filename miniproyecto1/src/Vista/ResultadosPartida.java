@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 
 /**
  * 
@@ -41,6 +38,7 @@ public class ResultadosPartida extends JFrame {
         this.jugador = jugador;
         this.tablero = tablero;
         initComponents();
+        setResizable(false);
         setSize(550, 450);
         setVisible(true);
         setLocationRelativeTo(null);

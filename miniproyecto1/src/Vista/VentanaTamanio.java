@@ -23,6 +23,7 @@ public class VentanaTamanio extends JFrame {
 
     public VentanaTamanio() {
         initComponents();
+        setResizable(false);
         setSize(550, 450);
         setVisible(true);
         setLocationRelativeTo(null);
@@ -55,7 +56,6 @@ public class VentanaTamanio extends JFrame {
         btnSalir.setBounds(215, 230, 130, 60);
 
     }
-    
 
     private class button_events implements ActionListener {
 

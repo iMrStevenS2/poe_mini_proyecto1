@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 
 /**
  * 
@@ -30,7 +27,8 @@ public class IngresarNombre extends JFrame {
 
     public IngresarNombre() {
         initComponents();
-        setSize(150, 150);
+        setSize(300, 150);
+        setResizable(false);
         setVisible(true);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -53,9 +51,9 @@ public class IngresarNombre extends JFrame {
         masterPanel.add(txtNombre);
         masterPanel.add(btnContinuar);
 
-        lblAccion.setBounds(10, 10, 120, 20);
-        txtNombre.setBounds(10, 40, 120, 20);
-        btnContinuar.setBounds(10, 70, 120, 20);
+        lblAccion.setBounds(10, 10, 270, 20);
+        txtNombre.setBounds(10, 40, 270, 20);
+        btnContinuar.setBounds(10, 70, 270, 20);
         if (txtNombre.getText().length() > 0) {
             btnContinuar.setEnabled(true);
         }
